@@ -1,0 +1,192 @@
+/* ===============================
+   GLOBAL RESET & DEFAULT STYLES
+   (APPLIES TO ALL PAGES)
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===============================
+   BODY STYLE (ALL PAGES)
+================================ */
+body {
+  background: lightgray;
+  color: black;
+}
+
+/* ===============================
+   HEADER SECTION (ALL PAGES)
+================================ */
+header {
+  text-align: center;
+  background: black;
+  padding: 15px;
+  color: white;
+}
+
+/* ===============================
+   NAVIGATION MENU (ALL PAGES)
+================================ */
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   MAIN CONTAINER (ALL PAGES)
+   Used in Home, Skills, Lessons, Contact
+================================ */
+.container {
+  text-align: center;
+  padding: 15px;
+  transform: scale(0.1);
+  transform-origin: center;
+  animation: growToFull 0.9s ease-out forwards;
+}
+
+/* Page load animation */
+@keyframes growToFull {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* =====================================================
+   HOME PAGE STYLES
+===================================================== */
+
+/* Profile image style (Home Page) */
+.profile img {
+  text-align: center;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+/* Profile card container (Home Page) */
+.profile {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Fun facts section (Home Page) */
+.fun-facts {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* =====================================================
+   SKILLS PAGE STYLES
+===================================================== */
+
+/* Skill box container */
+.skill {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  background: white;
+}
+
+/* Skill progress bar background */
+.bar {
+  background: lightgray;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/* Skill progress bar fill */
+.bar div {
+  background: black;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   LESSONS PAGE STYLES
+===================================================== */
+
+/* Lesson card preview (Lessons Page) */
+.lesson-card {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+/* Lesson card hover effect */
+.lesson-card:hover {
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+/* Lesson card link style */
+.lesson-card a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Lesson card link hover */
+.lesson-card a:hover {
+  text-decoration: underline;
+}
+
+/* Individual lesson content page */
+.lesson {
+  text-align: left;
+  background: white;
+  padding: 20px;
+  margin: 15px 10px;
+  border-radius: 15px;
+  transform: scale(0.1);
+  transform-origin: center;
+  animation: growToFull 0.9s ease-out forwards;
+}
+
+/* =====================================================
+   CONTACT PAGE STYLES
+===================================================== */
+
+/* Contact page links */
+.link a {
+  color: black;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form inputs */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* ===============================
+   FOOTER (ALL PAGES)
+================================ */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: black;
+  color: white;
+}
